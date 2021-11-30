@@ -4,8 +4,11 @@ import 'react-quill/dist/quill.snow.css'
 // import Quill from 'quill';
 import ReactQuill, { Quill } from 'react-quill'
 // import dynamic from 'next/dynamic'
-import { ImageResize } from 'quill-image-resize-module-ts'
-Quill.register('modules/imageResize', ImageResize)
+// import { ImageResize } from 'quill-image-resize-module-ts'
+import ResizeModule from "@ssumo/quill-resize-module";
+
+// Quill.register('modules/imageResize', ImageResize)
+Quill.register("modules/resize", ResizeModule);
 
 const RichTextArea: FC<any> = ({
 	// value,
@@ -17,6 +20,7 @@ const RichTextArea: FC<any> = ({
 			[{ header: '1' }, { header: '2' }, { font: [] }],
 			[{ size: ['small', false, 'large', 'huge'] }],
 			['bold', 'italic', 'underline', 'strike', 'blockquote'],
+			[{ 'align': [] }],
 			[{ direction: 'rtl' }],
 			[
 				{ list: 'ordered' },
@@ -24,7 +28,7 @@ const RichTextArea: FC<any> = ({
 				{ indent: '-1' },
 				{ indent: '+1' },
 			],
-			['link', 'image', 'video'],
+			['link', 'image','video'],
 			['clean'],
 		],
 		// imageResize: {},
@@ -33,10 +37,20 @@ const RichTextArea: FC<any> = ({
 		// 	parchment: Quill.import('parchment'),
 		// 	modules: ['Resize', 'DisplaySize', 'Toolbar'],
 		// },
-		imageResize: {
-			displaySize: true,
-			modules: ['Resize', 'DisplaySize',],
-		},
+		// imageResize: {
+		// 	displaySize: true,
+		// 	modules: ['Resize', 'DisplaySize',],
+		// },
+		resize: {
+			Size: true,
+			locale: {
+			  altTip: "Hold down the alt key to zoom",
+			  floatLeft: "Left",
+			  floatRight: "Right",
+			  center: "Center",
+			  restore: "Restore"
+			}
+		  },
 		clipboard: {
 			// toggle to add extra line breaks when pasting HTML:
 			matchVisual: false,
@@ -58,6 +72,7 @@ const RichTextArea: FC<any> = ({
 		'link',
 		'image',
 		'video',
+		'align'
 	]
 
 	const [showSnackbar, setShowSnackbar] = useState(false)
