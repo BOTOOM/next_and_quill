@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Layout from '../components/Layout'
+import RichText from '../components/RichText'
 
 const IndexPage = () => (
   <Layout title="Home | Next.js + TypeScript Example">
@@ -8,6 +9,8 @@ const IndexPage = () => (
       <Link href="/about">
         <a>About</a>
       </Link>
+      <RichText/>
+
     </p>
   </Layout>
 )
