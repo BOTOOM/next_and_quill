@@ -5,10 +5,10 @@ import 'react-quill/dist/quill.snow.css'
 import ReactQuill, { Quill } from 'react-quill'
 // import dynamic from 'next/dynamic'
 // import { ImageResize } from 'quill-image-resize-module-ts'
-import ResizeModule from "@ssumo/quill-resize-module";
+// import ResizeModule from "@ssumo/quill-resize-module";
 
 // Quill.register('modules/imageResize', ImageResize)
-Quill.register("modules/resize", ResizeModule);
+// Quill.register("modules/resize", ResizeModule);
 
 const RichTextArea: FC<any> = ({
 	// value,
@@ -41,16 +41,16 @@ const RichTextArea: FC<any> = ({
 		// 	displaySize: true,
 		// 	modules: ['Resize', 'DisplaySize',],
 		// },
-		resize: {
-			Size: true,
-			locale: {
-			  altTip: "Hold down the alt key to zoom",
-			  floatLeft: "Left",
-			  floatRight: "Right",
-			  center: "Center",
-			  restore: "Restore"
-			}
-		  },
+		// resize: {
+		// 	Size: true,
+		// 	locale: {
+		// 	  altTip: "Hold down the alt key to zoom",
+		// 	  floatLeft: "Left",
+		// 	  floatRight: "Right",
+		// 	  center: "Center",
+		// 	  restore: "Restore"
+		// 	}
+		//   },
 		clipboard: {
 			// toggle to add extra line breaks when pasting HTML:
 			matchVisual: false,
