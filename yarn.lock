@@ -50,6 +50,11 @@
     "@babel/helper-validator-identifier" "^7.14.9"
     to-fast-properties "^2.0.0"
 
+"@botom/quill-resize-module@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@botom/quill-resize-module/-/quill-resize-module-2.0.0.tgz#ef7dcc6ba72aad8f3487840457585d781728af01"
+  integrity sha512-IOd48il/FdGN2HmsIVWn0kqpnn52L9eYLNM7Z1ZixlmX0NAxegImpHaz0Yfvk6arH42aZW0viWa/GHc4ZPFccg==
+
 "@hapi/accept@5.0.2":
   version "5.0.2"
   resolved "https://registry.yarnpkg.com/@hapi/accept/-/accept-5.0.2.tgz#ab7043b037e68b722f93f376afb05e85c0699523"
@@ -161,11 +166,6 @@
   version "12.0.4"
   resolved "https://registry.yarnpkg.com/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-12.0.4.tgz#acb9ffb17118b797d8c76dd688dd0aec5fa65cd4"
   integrity sha512-f+7WNIJOno5QEelrmob+3vN5EZJb3KCkOrnvUsQ0+LCCD0dIPIhCjeHAh3BGj9msGu8ijnXvD7JxVxE5V26cnQ==
-
-"@ssumo/quill-resize-module@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@ssumo/quill-resize-module/-/quill-resize-module-1.0.0.tgz#bc957ab02537959f5f5eb167f085e23b0e6f4389"
-  integrity sha512-FwFG1OmRgpus/eQQjZM5K1xE7LClRh0cuE/keAAjqaow1Or1F28gIAbYw+sWeJO19gyjeVA+TcVEa66PttLqXw==
 
 "@types/node@*":
   version "16.11.11"
@@ -1477,15 +1477,7 @@ quill-delta@^3.6.2:
     extend "^3.0.2"
     fast-diff "1.1.2"
 
-quill-image-resize-module-ts@^3.0.3:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/quill-image-resize-module-ts/-/quill-image-resize-module-ts-3.0.3.tgz#47e6d81214719b7a745c2d4e53cad2cef09ad4dc"
-  integrity sha512-NMWw67zCfGxE0AyPTVLWMTAs71eKerd+jJJqu9ZuPBGZl7vc+Jtb+tmfx33pC3h0deVYqgOMXYzbFBIRmu/WuQ==
-  dependencies:
-    lodash "^4.17.4"
-    quill "^1.3.4"
-
-quill@^1.3.4, quill@^1.3.7:
+quill@^1.3.7:
   version "1.3.7"
   resolved "https://registry.yarnpkg.com/quill/-/quill-1.3.7.tgz#da5b2f3a2c470e932340cdbf3668c9f21f9286e8"
   integrity sha512-hG/DVzh/TiknWtE6QmWAF/pxoZKYxfe3J/d/+ShUWkDvvkZQVTPeVmUJVu1uE6DDooC4fWTiCLh84ul89oNz5g==
